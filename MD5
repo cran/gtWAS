@@ -1,0 +1,15 @@
+07a656527cc6d8191412201835270022 *DESCRIPTION
+5c1b2aa0fade95dbe0f4216281bb2588 *NAMESPACE
+962369bd7342369bacc98f5bdae26299 *R/InfoCriteria.R
+e166543f646369b88e873bc1cc355369 *R/StepOne.R
+e1fec3895cde44f33d14d77a51864ffc *R/gtWAS.R
+1455c0a2aff839dd06270cc3fb650e6d *R/stepwise.R
+4c4a101d76f722f1da3366353236ceae *data/Tdata.rda
+ff5089ccb6c8a249731adf9a5973cfa2 *data/alldata.rda
+3911dfed0af59eab3a830aa530363350 *man/InfoCriteria.Rd
+6763c224a1deab4cec0a93e843ceca54 *man/StepOne.Rd
+6ac01fb7330b5b08e23b6cbb66affd4c *man/Tdata.Rd
+9cc1b21352c7179cc3258b8eb53c69b0 *man/alldata.Rd
+66b1a32b17ca44f139d6250eaaa46157 *man/gtWAS-package.Rd
+9e3ad831d172ab089f34fcb86f3b7387 *man/gtWAS.Rd
+571e2e0097850748ad9401fa840d8fe3 *man/stepwise.Rd
