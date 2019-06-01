@@ -1,2 +1,2 @@
-importFrom("stats", "anova", "as.formula", "deviance", "df.residual","lm", "residuals")
+importFrom("stats", "anova", "as.formula", "deviance", "df.residual","lm", "residuals","quantile")
 exportPattern("^[[:alpha:]]+")

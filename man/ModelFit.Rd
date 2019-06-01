@@ -1,13 +1,13 @@
-\name{InfoCriteria}
-\alias{InfoCriteria}
+\name{ModelFit}
+\alias{ModelFit}
 \title{
-Compute information cirteria statistics 
+Compute model fit statistics 
 }
 \description{
-Compute information cirteria statistics based on a given criteria for linear model function
+Compute model fit statistics based on a given criteria for linear model function
 }
 \usage{
-InfoCriteria(criteria, lmresult, nObs, sigma_sqr)
+ModelFit(criteria, lmresult, nObs, sigma_sqr)
 }
 \arguments{
   \item{criteria}{
@@ -24,7 +24,7 @@ The estimation of pure error variance for the full model in regression
 }
 }
 \value{
-A numeric of information cirteria statistics 
+A numeric of model fit statistics 
 }
 \references{
 Hurvich, C. M., & Tsai, C. (1989). Regression and time series model selection in small samples. Biometrika, 76(2), 297-307.
@@ -50,7 +50,7 @@ YX <- as.data.frame(YX)
 colnames(YX) <- c("Y1","Y2",paste("X",c(1:8),sep=""))
 lm_formula <- as.formula("Y1~X1+X2+X3+X4+X5")
 lmresult <- lm(lm_formula,data=YX)
-InfoCriteria("SBC", lmresult, nrow(YX), 0)
+ModelFit("SBC", lmresult, nrow(YX), 0)
 }
 \keyword{Model Selection}
 

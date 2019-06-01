@@ -1,5 +1,5 @@
-\name{stepwise}
-\alias{stepwise}
+\name{stp}
+\alias{stp}
 \title{
 stepwise regression
 }
@@ -7,8 +7,8 @@ stepwise regression
 Stepwise regression for model selection using linear model
 }
 \usage{
-stepwise(AllData, independent, selection = "stepwise", select = "SL",
-sle = 0.05, sls = 0.05, Choose = "SBC")
+stp(AllData, independent, selection = "stepwise", select = "SL",
+sle = 0.15, sls = 0.15, Choose = NULL)
 }
 \arguments{
   \item{AllData}{
@@ -24,10 +24,10 @@ Model selection method including "forward" and "stepwise",forward selection star
 Specifies the criterion that uses to determine the order in which effects enter and/or leave at each step of the specified selection method including Akaike Information Criterion(AIC), the Corrected form of Akaike Information Criterion(AICc),Bayesian Information Criterion(BIC),Schwarz criterion(SBC),Hannan and Quinn Information Criterion(HQ), Significant Levels(SL) and so on
 }
   \item{sle}{
-Specifies the significance level for entry
+Specifies the significance level for entry, default is 0.15
 }
   \item{sls}{
-Specifies the significance level for staying in the model
+Specifies the significance level for staying in the model, default is 0.15
 }
   \item{Choose}{
 Chooses from the list of models at the steps of the selection process the model that yields the best value of the specified criterion. If the optimal value of the specified criterion occurs for models at more than one step, then the model with the smallest number of parameters is chosen. If you do not specify the Choose option, then the model selected is the model at the final step in the selection process
@@ -57,7 +57,7 @@ nbase <- 100
 AllData <- cbind(Tdata[colnames(Tdata)[1]],alldata[,1:nbase])
 AllData <- sapply(AllData, as.numeric)
 AllData <- as.data.frame(AllData)
-stepwise(AllData,independent,selection="stepwise",select="SBC",sle=0.05,sls=0.05,Choose="SBC")
+stp(AllData,independent,selection="stepwise",select="SBC",sle=0.05,sls=0.05,Choose=NULL)
 }
 \keyword{ Model Selection }
 

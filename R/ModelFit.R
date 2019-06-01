@@ -1,5 +1,4 @@
-InfoCriteria <-
-function(criteria,lmresult,nObs,sigma_sqr){
+ModelFit <- function(criteria,lmresult,nObs,sigma_sqr){
   p <- lmresult$rank
   nY <- 1
   lm_res <- residuals(lmresult)

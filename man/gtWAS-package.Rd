@@ -11,8 +11,8 @@ Quantitative trait loci mapping and genome wide association analysis are used to
 \tabular{ll}{
 Package: \tab gtWAS\cr
 Type: \tab Package\cr
-Version: \tab 1.0\cr
-Date: \tab 2017-12-31\cr
+Version: \tab 1.1.0\cr
+Date: \tab 2019-06-01\cr
 License: \tab GPL (>= 2)\cr
 }
 }

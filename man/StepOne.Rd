@@ -7,7 +7,7 @@ Compute minimum p value and information criteria statistics in one step
 Compute minimum p value and information criteria statistics in one step by adding or removing a variable
 }
 \usage{
-StepOne(findIn, independent, criteria = "SL", varIn, TMdata, sigma = 0)
+StepOne(findIn, independent, criteria, varIn, TMdata, sigma)
 }
 \arguments{
   \item{findIn}{
